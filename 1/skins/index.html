@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FNAF 1 — Imagens da skin</title>
+    <style>
+        body { margin: 0; background: #151518; color: #eee; font: 16px system-ui, sans-serif; }
+        header { padding: 24px; background: #232329; }
+        h1 { margin-top: 0; }
+        a { color: #a8d5ff; }
+        input { padding: 12px; width: min(340px, 85%); font: inherit; }
+        #status { padding: 0 24px; }
+        main { padding: 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }
+        figure { margin: 0; padding: 12px; background: #25252c; border-radius: 8px; }
+        figure img { width: 100%; height: 180px; object-fit: contain; background: repeating-conic-gradient(#333 0% 25%, #444 0% 50%) 0 / 20px 20px; }
+        figcaption { margin-top: 10px; overflow-wrap: anywhere; }
+        small { display: block; margin: 6px 0; color: #ccc; }
+        [hidden] { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Imagens da skin — FNAF 1</h1>
+        <p>Procure o Freddy nas miniaturas. Clique na imagem para ampliar ou use “Baixar PNG” para obter uma cópia.</p>
+        <p>Edite o arquivo correspondente em <strong id="folder"></strong>, mantendo o nome e as dimensões. Salve e recarregue o jogo. Esta galeria mostra as imagens substituídas pela skin; as outras continuam originais.</p>
+        <p><a id="play" href="../">Jogar com esta skin</a> · <a href="../?skin=original">Jogar com as imagens originais</a></p>
+        <label>Filtrar pelo nome: <input id="filter" type="search" placeholder="Ex.: M0001 ou 0549"></label>
+    </header>
+    <p id="status" role="status">Carregando imagens…</p>
+    <main id="gallery"></main>
+    <script>
+        const skin = new URLSearchParams(location.search).get('skin') || 'docao';
+        const status = document.getElementById('status');
+        const gallery = document.getElementById('gallery');
+        async function load() {
+            if (!/^[a-zA-Z0-9_-]+$/.test(skin) || skin === 'original') throw new Error('Nome de skin inválido.');
+            document.getElementById('folder').textContent = `1/skins/${skin}/images/`;
+            document.getElementById('play').href = `../?skin=${encodeURIComponent(skin)}`;
+            const response = await fetch(`${skin}/manifest.json`, { cache: 'no-store' });
+            if (!response.ok) throw new Error(`Prepare as imagens primeiro: python tools/prepare_skin.py --name ${skin}`);
+            const manifest = await response.json();
+            const revision = Date.now();
+            for (const entry of manifest.images) {
+                if (!/^[a-zA-Z0-9_-]+\.png$/.test(entry.name)) continue;
+                const url = `${skin}/images/${entry.name}?v=${revision}`;
+                const card = document.createElement('figure');
+                card.dataset.name = entry.name.toLowerCase();
+                const full = document.createElement('a');
+                full.href = url;
+                full.target = '_blank';
+                full.rel = 'noopener';
+                const img = document.createElement('img');
+                img.src = url;
+                img.alt = entry.name;
+                img.loading = 'lazy';
+                full.append(img);
+                const caption = document.createElement('figcaption');
+                caption.textContent = entry.name;
+                const size = document.createElement('small');
+                size.textContent = `${entry.width} × ${entry.height} pixels`;
+                const download = document.createElement('a');
+                download.href = url;
+                download.download = entry.name;
+                download.textContent = 'Baixar PNG';
+                caption.append(size, download);
+                card.append(full, caption);
+                gallery.append(card);
+            }
+            filter();
+        }
+        function filter() {
+            const query = document.getElementById('filter').value.toLowerCase();
+            let visible = 0;
+            for (const card of gallery.children) {
+                card.hidden = !card.dataset.name.includes(query);
+                if (!card.hidden) visible++;
+            }
+            status.textContent = `${visible} de ${gallery.children.length} imagens`;
+        }
+        document.getElementById('filter').addEventListener('input', filter);
+        load().catch(error => { status.textContent = error.message; });
+    </script>
+</body>
+</html>

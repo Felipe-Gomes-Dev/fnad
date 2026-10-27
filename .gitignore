@@ -1,0 +1,7 @@
+# Editable images and manifests can be regenerated from the original archives.
+1/skins/*/images/
+1/skins/*/manifest.json
+!1/skins/docao/images/
+!1/skins/docao/manifest.json
+/tmp/
+__pycache__/

@@ -1,0 +1,311 @@
+{
+  "name": "Docao",
+  "launcher": "preview.png",
+  "images": [
+    {
+      "name": "0002.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0019.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0068.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0223.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0224.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0307.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0308.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0309.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0310.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0311.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0312.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0313.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0314.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0315.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0316.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0317.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0318.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0319.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0320.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0321.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0322.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0323.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0324.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0325.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0348.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0355.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0358.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0431.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0440.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0441.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0442.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "0489.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0490.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0491.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0492.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0493.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0495.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0496.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0497.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0498.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0499.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0500.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0501.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0502.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0503.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0504.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0505.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0506.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0507.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0508.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0509.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0510.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0511.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0512.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0513.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0514.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0515.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0516.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0517.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0518.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "name": "0525.png",
+      "width": 1280,
+      "height": 720
+    }
+  ]
+}
