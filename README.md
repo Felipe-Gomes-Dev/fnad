@@ -1,6 +1,6 @@
 # FNAD
 
-Versão para navegador do **Five Nights at Freddy’s 1**, com a skin do **Docão**
+Versão para navegador do **Five Nights at Freddy’s 1**, com as skins do **Docão e da Lia**
 e seleção das noites 1 a 5 integrada ao menu original.
 
 Este repositório contém apenas o primeiro jogo. Não há etapa de compilação,
@@ -42,7 +42,9 @@ incluído localmente, então o FNAF 1 funciona sem depender de uma CDN.
 - A noite escolhida fica disponível em **Continue**, preservando as demais
   conquistas. O progresso é salvo no armazenamento local do navegador.
 
-A skin Docão está ativa por padrão. Para usar as imagens originais do Freddy,
+As skins Docão (Freddy) e Lia (Chica) estão ativas juntas por padrão.
+Para usar somente o Docão, abra http://localhost:8000/1/?skin=docao.
+Para usar as imagens originais,
 abra http://localhost:8000/1/?skin=original.
 
 ## Skins e arquivos do projeto
@@ -51,6 +53,7 @@ abra http://localhost:8000/1/?skin=original.
 - `1/`: jogo, runtime, recursos e bibliotecas locais.
 - `1/src/night-menu.js`: seleção de noites no próprio menu do jogo.
 - `1/skins/docao/`: skin Docão, incluída no versionamento.
+- `1/skins/lia/`: skin Lia, com 26 substituições e herança da skin Docão.
 - `tools/prepare_skin.py`: prepara cópias editáveis dos PNGs originais.
 
 A galeria da skin está em http://localhost:8000/1/skins/.
@@ -65,7 +68,7 @@ python tools/prepare_skin.py --name minha-skin
 ```
 
 Depois abra http://localhost:8000/1/?skin=minha-skin. As imagens extraídas de
-skins de trabalho são ignoradas pelo Git; a skin Docão pronta é a exceção.
+skins de trabalho são ignoradas pelo Git; as skins Docão e Lia prontas são as exceções.
 A pasta `tmp/` contém apenas arquivos locais de trabalho e backups e não faz
 parte do projeto versionado.
 
@@ -73,7 +76,7 @@ parte do projeto versionado.
 
 Este projeto utiliza como **base e referência** o repositório original
 [irv77/hd_fnaf](https://github.com/irv77/hd_fnaf), do qual foi mantido apenas
-o FNAF 1 para navegador. A skin Docão e o seletor de noites são adaptações
+o FNAF 1 para navegador. As skins Docão e Lia e o seletor de noites são adaptações
 locais sobre essa base.
 
 Five Nights at Freddy’s é uma criação de **Scott Cawthon**. Este projeto é

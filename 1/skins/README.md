@@ -1,6 +1,9 @@
 # Skins do FNAF 1
 
-A skin **Docão** já vem pronta e ativa em http://localhost:8000/1/.
+As skins **Docão e Lia** já vêm prontas e ativas em http://localhost:8000/1/.
+Lia substitui a Chica e herda as imagens do Docão pelo campo `baseSkin` do
+manifesto. Veja os detalhes em [lia/README.md](lia/README.md).
+Para jogar somente com o Docão: http://localhost:8000/1/?skin=docao.
 Veja suas imagens em http://localhost:8000/1/skins/.
 Para jogar com o Freddy original, use http://localhost:8000/1/?skin=original.
 Os arquivos editados estão em `1/skins/docao/images/`; não é preciso executar
@@ -45,7 +48,7 @@ http://localhost:8000/1/?skin=meu-freddy para jogar.
 Para restaurar um PNG, mova a versão editada para um backup fora da pasta
 `images` e execute o preparador novamente com o mesmo nome de skin. Ele repõe
 apenas os arquivos ausentes. As imagens extraídas e os manifestos são ignorados
-pelo Git, com exceção da skin Docão pronta. Para compartilhar uma skin, envie
+pelo Git, com exceção das skins Docão e Lia prontas. Para compartilhar uma skin, envie
 sua pasta com `images/` e `manifest.json`.
 
 Sem um manifesto preparado, o jogo usa as imagens originais. O FNAF 1 inclui

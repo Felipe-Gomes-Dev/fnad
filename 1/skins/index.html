@@ -22,15 +22,16 @@
 <body>
     <header>
         <h1>Imagens da skin — FNAF 1</h1>
-        <p>Procure o Freddy nas miniaturas. Clique na imagem para ampliar ou use “Baixar PNG” para obter uma cópia.</p>
-        <p>Edite o arquivo correspondente em <strong id="folder"></strong>, mantendo o nome e as dimensões. Salve e recarregue o jogo. Esta galeria mostra as imagens substituídas pela skin; as outras continuam originais.</p>
+        <p>Veja as substituições nas miniaturas. Clique na imagem para ampliar ou use “Baixar PNG” para obter uma cópia.</p>
+        <p><a href="?skin=lia">Lia / Chica</a> · <a href="?skin=docao">Docão / Freddy</a></p>
+        <p>Edite o arquivo correspondente em <strong id="folder"></strong>, mantendo o nome e as dimensões. Salve e recarregue o jogo. Esta galeria mostra as imagens próprias da skin; as demais vêm da skin base, quando definida, ou do jogo original.</p>
         <p><a id="play" href="../">Jogar com esta skin</a> · <a href="../?skin=original">Jogar com as imagens originais</a></p>
         <label>Filtrar pelo nome: <input id="filter" type="search" placeholder="Ex.: M0001 ou 0549"></label>
     </header>
     <p id="status" role="status">Carregando imagens…</p>
     <main id="gallery"></main>
     <script>
-        const skin = new URLSearchParams(location.search).get('skin') || 'docao';
+        const skin = new URLSearchParams(location.search).get('skin') || 'lia';
         const status = document.getElementById('status');
         const gallery = document.getElementById('gallery');
         async function load() {

@@ -3,5 +3,10 @@
 1/skins/*/manifest.json
 !1/skins/docao/images/
 !1/skins/docao/manifest.json
+!1/skins/lia/images/
+!1/skins/lia/manifest.json
 /tmp/
 __pycache__/
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/

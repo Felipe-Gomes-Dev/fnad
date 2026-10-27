@@ -1,0 +1,13 @@
+Gerado com a ferramenta integrada image_gen. Em cada chamada: imagem 1 = reference.png; imagem 2 = atlas dos quadros de origem, na ordem documentada no README.
+
+## stage
+
+Use case: precise-object-edit. Asset type: FNAF1 game camera sprite atlas, EXACT TWO COLUMNS x TWO ROWS equal 20:9 landscape panels, no gutters. Image1 is Lia identity reference: worn golden yellow PIG animatronic with huge burgundy pink head bow, floppy side ears, black eyelash eye sockets, white glowing pupils with pink rings, orange pig snout TWO nostrils, pink round cheeks, burgundy bib with cream 'Lia' and heart. Image2 is EDIT TARGET. Replace ONLY Chica yellow CHICKEN in EACH of four panels with Lia, preserving exact Chica location, scale, head angle and body pose. Top-left/top-right/bottom-left: Chica is CENTER between purple Bonnie left and golden pig Docão right. Preserve Bonnie and Docão exactly; DO NOT change Docão or give him a bow. Bottom-right: replace distant Chica behind dining tables with distant Lia at same scale and place. Preserve every environment, furniture, other characters, deep dark cool lighting. Lia must blend into deep shadows, not bright studio lighting. Keep same exact 2x2 equal edge-to-edge grid, no extra characters, no borders, no labels, no watermark. Output 3200x1440 if possible.
+
+## cameras
+
+Use case: precise-object-edit. Asset type: FNAF1 camera atlas STRICT TWO COLUMNS x THREE ROWS six equal 20:9 landscape panels edge-to-edge, no gutters. Image1 identity reference is Lia: damaged gold yellow PIG robot, huge burgundy pink head bow, floppy ears, pink cheeks, orange pig snout TWO nostrils not beak, black eye sockets eyelashes, white pink-ring glowing pupils, burgundy chest bib cream 'Lia' heart. Image2 EDIT TARGET: replace ONLY the yellow chicken Chica in ALL six cells with this exact Lia, preserving each cell's independent pose, camera angle, size, cropping. Row1 left restroom standing beneath camera; row1 right hallway corner high angle. Row2 left distant fullbody down hallway under lamp in shadow; row2 right same hallway close tilted head mouth WIDE open. Row3 left high angle closeup mouth WIDE open; row3 right high angle mouth relaxed closed. Preserve all backgrounds EXACTLY: posters, tiled floors, walls, hanging cables, bright overhead lamp glare. Lia follows the same dark dim exposure as original Chica, no added bright frontal keylight. Preserve differing head rotations and jaws per panel; don't copy same pose into all panels. No other characters, no text except Lia bib, no watermark or borders. Exact 2x3 grid. Output 3200x2160 if possible.
+
+## jumpscare
+
+undefined
